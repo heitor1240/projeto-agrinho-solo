@@ -1,0 +1,151 @@
+:root {
+    --cor-principal: #003366;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 0.2cm;
+    text-align: center;
+   
+   
+}
+nav {
+    background-color: var(--cor-principal);
+    
+    color: white;
+    padding: 0.2cm;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 3px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2, h3 {
+    color: var(--cor-principal);
+    margin-top: 0;
+}
+
+.services, .about, .products, .blog, .contact {
+    background: white;
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
+.service-items, .product-items, .blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service-item, .product-item, .blog-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact form {
+    background: #e0e0e0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact form input, .contact form textarea {
+    width: 98%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    background: var(--cor-principal);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    width: 99%;
+}
+
+footer {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
